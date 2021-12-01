@@ -40,7 +40,7 @@ export default function Home({ product }: HomeProps) {
 // staticProps retorna um valor stático que pode ser renovado a cada período definido
 
 export const getStaticProps: GetStaticProps = async () => {
-  const price = await stripe.prices.retrieve('price_1JthYkLfBv8VJsMer2GKzd7o', {
+  const price = await stripe.prices.retrieve('price_1K21JqLQBugtAKFrYRT0bu4V', {
     expand: ['product']
   })
 
